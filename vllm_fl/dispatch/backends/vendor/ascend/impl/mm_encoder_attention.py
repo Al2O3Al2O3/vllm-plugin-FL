@@ -55,7 +55,7 @@ class AscendMMEncoderAttention(MMEncoderAttention):
             scale=scale,
             num_kv_heads=num_kv_heads,
             prefix=prefix,
-            multimodal_config=multimodal_config,
+            # multimodal_config=multimodal_config,  # Removed for vLLM 0.20.2 compatibility
         )
 
     def reshape_qkv_to_3d(
